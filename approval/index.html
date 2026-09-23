@@ -157,12 +157,12 @@ footer a{color:var(--sign-strong)}
   </div>
 </footer>
 
-<!-- VISIT TRACKING: Cloudflare Web Analytics.
-     Paste the beacon token from Cloudflare dash > Web Analytics > getbufferloan.com.
-     Same setup already used for fixyourrevenueengine.com. Cookieless, no consent banner needed.
-     <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-             data-cf-beacon='{"token": "PASTE_TOKEN_HERE"}'></script>
--->
+<!-- Cloudflare Web Analytics. Cookieless, no consent banner required.
+     JS-snippet mode (not auto-inject) because our DNS records are DNS-only,
+     so traffic goes straight to GitHub Pages and never passes through Cloudflare. -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "decff0ca17444f62bf04e4fded15fd53"}'></script>
+<!-- End Cloudflare Web Analytics -->
 
 </body>
 </html>
